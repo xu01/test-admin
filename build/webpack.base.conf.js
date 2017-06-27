@@ -38,7 +38,7 @@ module.exports = {
         include: [resolve('src'), resolve('test')],
         query: {
           presets:['es2015'],
-          plugins:['syntax-dynamic-import']
+          plugins:['syntax-dynamic-import', 'transform-object-rest-spread']
         }
       },
       {
