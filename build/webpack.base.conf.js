@@ -38,9 +38,6 @@ module.exports = {
         include: [resolve('src'), resolve('test')],
         query: {
           presets:['es2015']
-      },
-        options: {
-          plugins: ['syntax-dynamic-import']
         }
       },
       {
