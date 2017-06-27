@@ -1,0 +1,89 @@
+@bg-color:#30005c;
+@border-color:#571c97;
+@border-card-color:#601fa6;
+@title-color:#fcf008;
+@sub-color:#8445cd;
+@bg-title-color:#f01b73;
+
+.guess-rule{
+  position: relative;left:0;right:0;margin:auto;
+  padding:0 30px;
+  background: @bg-color;
+  color:#FFF;
+  .cloud-left{
+    width: 258px;
+    height: 116px;
+    position: absolute;
+    top:58px;
+    left:0px;
+  }
+  .cloud-right{
+    width: 272px;
+    height: 116px;
+    position: absolute;
+    top:0px;
+    right:0px;
+  }
+  &-title{
+    color:@title-color;
+    font-size:36px; /*px*/
+    font-weight: bold;
+    line-height: 70px;
+    height: 70px;
+    text-align: center;
+    margin:0 auto;
+    padding:0 60px;
+    width:230px;
+    background-color: @bg-title-color;
+    position: relative;
+    .inner{
+      line-height: 70px;
+      height: 70px;overflow: hidden;
+    }
+    .star-left{
+      width: 20px;
+      height: 20px;
+      position: absolute;z-index: 2;
+      bottom:-5px;
+      left:-25px;
+    }
+    .star-right{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top:5px;
+      right:-35px;
+    }
+  }
+  &-title:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-left: 20px solid @bg-color;
+    border-bottom: 35px solid transparent;
+    position: absolute;left:0;top:0;
+  }
+  &-title:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-right: 20px solid @bg-color;
+    border-bottom: 35px solid transparent;
+    position: absolute;right:0;top:0;
+  }
+  &-text{
+    padding-top:20px;
+    font-weight: normal;
+    //list-style: decimal;
+    li{
+      font-size:30px; /*px*/
+      line-height:40px;
+      margin:50px 0px;
+    }
+    .big{
+      font-size:36px; /*px*/
+    }
+  }
+}

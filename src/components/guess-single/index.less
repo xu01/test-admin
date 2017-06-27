@@ -1,0 +1,165 @@
+@bg-color:#30005c;
+@border-color:#571c97;
+@border-card-color:#601fa6;
+@title-color:#fcf008;
+@sub-color:#8445cd;
+@bg-title-color:#f01b73;
+
+.guess-single{
+  background: @bg-color;
+  padding:0 30px;
+
+  &__title{
+    text-align: center;
+    font-size:40px;/*px*/
+    color:#FFF;
+  }
+  &__content{
+    background-image:url('../../assets/singlebg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top:40px;
+    padding-bottom:20px;
+    &-info{
+      display: flex;justify-content: center;
+      color:#FFF;
+      .info{
+        text-align: center;
+        .team-logo{
+          width: 148px;
+          height: 148px;
+          border-radius: 50%;
+          margin-bottom:18px;
+          overflow: hidden;
+        }
+      }
+      .mid{
+        text-align: center;
+        padding:0 18px;
+        &-time{
+          font-size:36px;/*px*/
+        }
+        &-hint{
+          color:#716d76;
+          font-size:20px;/*px*/
+        }
+        &-score{
+          font-size:80px;/*px*/
+        }
+      }
+    }
+    &-head{
+      height:182px;
+      display: flex;align-items: center;justify-content: center;flex-direction: column;
+      &-text{
+        color:@title-color;
+        font-size:36px; /*px*/
+        font-weight: bold;
+        line-height: 70px;
+        height: 70px;
+        max-width: 100%;
+        text-align: center;
+        padding:0 60px;
+        background-color: @bg-title-color;
+        position: relative;
+        .inner{
+          max-width: 100%;line-height: 70px;
+          height: 70px;overflow: hidden;
+        }
+        .star-left{
+          width: 20px;
+          height: 20px;
+          position: absolute;z-index: 2;
+          bottom:-5px;
+          left:35px;
+        }
+        .star-right{
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          top:-8px;
+          right:27px;
+        }
+      }
+      &-text:before{
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 35px solid transparent;
+        border-left: 20px solid @bg-color;
+        border-bottom: 35px solid transparent;
+        position: absolute;left:0;top:0;
+      }
+      &-text:after{
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 35px solid transparent;
+        border-right: 20px solid @bg-color;
+        border-bottom: 35px solid transparent;
+        position: absolute;right:0;top:0;
+      }
+      &-sub{
+        color:@sub-color;
+        margin-top:16px;
+      }
+    }
+    &-body{
+      padding-bottom:64px;
+      .box{
+        //width: 100%;
+        height: 100px;
+        border:2px solid @border-card-color;/*no*/
+        border-radius: 18px;
+        color:#FFF;
+        display: flex;justify-content: space-around;
+        background: #410577;
+        h5{
+          font-size:30px;/*px*/
+        }
+        p{
+          color:#cfc0dd;
+        }
+        span{
+          color:@sub-color;
+          position: absolute;
+          bottom:-48px;
+          left:0;right:0;margin:auto;
+        }
+        .box-left,.box-center,.box-right{
+          display: flex;flex-direction: column;
+          justify-content: center;align-items: center;
+          text-align: center;
+          flex:1;
+          position: relative;
+        }
+        .box-left:after{
+          content:'';
+          width: 1px;/*no*/
+          height: 34px;
+          background: url('../../assets/dotted.png') no-repeat center/contain;
+          position: absolute;right:0;top:0;bottom:0;margin:auto;
+        }
+        .box-right:before{
+          content:'';
+          width: 1px;/*no*/
+          height: 34px;
+          background: url('../../assets/dotted.png') no-repeat center/contain;
+          position: absolute;left:0;top:0;bottom:0;margin:auto;
+        }
+      }
+    }
+    &-foot{
+      //margin-bottom:42px;
+      color:#FFF;
+      font-size:28px;/*px*/
+      span{
+        height: 30px;line-height: 30px;border-radius: 2px;
+        display: inline-block;background: #26adec;
+        color:@bg-color;text-align: center;
+        font-size:20px;/*px*/
+        padding:0 6px;margin-right:8px;
+      }
+    }
+  }
+}

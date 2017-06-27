@@ -1,0 +1,83 @@
+@bg-color:#30005c;
+@border-color:#571c97;
+@sub-color:#26adec;
+
+.match-info{
+  &__top{
+    background:linear-gradient(left top, #aa0f3e, #30005c);
+    &-content{
+      background-image:url('../../assets/bg-top.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y:-105px;
+      &-tab{
+        padding-top:30px;
+        display: flex;justify-content: space-around;
+        .btn{
+          padding:0 30px;
+          height:58px;
+          line-height: 58px;
+          border:1px solid #c54993;/*no*/
+          border-radius: 30px;
+          color:#b5b5b5;
+          position: relative;
+          font-size:32px;/*px*/
+        }
+        .btn.active{
+          color:#FFF;
+          background: #f01b73;
+          border:1px solid #f01b73;/*no*/
+        }
+        .username{
+          position: absolute;bottom:-50px;right:0;left:0;margin:auto;
+          color:#e3b90d;
+          text-align: center;
+          font-size:20px;/*px*/
+        }
+      }
+      &-title{
+        height: 186px;
+        display: flex;
+        justify-content: center;
+        img{
+          width: 430px;
+          height: 102px;
+          margin-top:82px;
+        }
+      }
+      &-sub{
+        height:90px;
+        display: flex;justify-content: center;
+        margin:0 30px;
+        .tag-left{
+          width: 68px;
+          background: url('../../assets/tag-left.png') no-repeat center/cover;
+        }
+        .tag-right{
+          width: 68px;
+          background: url('../../assets/tag-right.png') no-repeat center/cover;
+        }
+        .subtitle{
+          background: @sub-color;
+          height: 74px;
+          line-height: 74px;
+          color:@bg-color;
+          font-size:40px;/*px*/
+          overflow: hidden;
+        }
+      }
+      &-more{
+        height:74px;
+        display: flex;justify-content: center;
+        .more-btn{
+          padding:0 30px;
+          height:58px;
+          line-height: 58px;
+          border:1px solid #5e1bae;/*no*/
+          border-radius: 30px;
+          color:#b5b5b5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,157 @@
+@bg-color:#30005c;
+@border-color:#571c97;
+@border-card-color:#601fa6;
+@title-color:#fcf008;
+@sub-color:#8445cd;
+@bg-title-color:#f01b73;
+
+.rank-list{
+  background: @bg-color;
+  margin:0 30px;
+  background-image:url('../../assets/singlebg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top:20px;
+  &__title{
+    color:#FFF;
+    font-size: 36px; /*px*/
+    text-align: center;
+    h2{
+
+    }
+    h3{
+      font-weight: normal;
+    }
+  }
+  &__list{
+    .head{
+      padding:0 20px;
+      line-height:70px;
+      color:#26adec;
+      font-size: 30px; /*px*/
+      .avator{
+        padding-left:110px;
+        padding-right:40px;
+      }
+      .nickname{
+        display: inline-block;
+        width: 320px;
+        text-align: center;
+      }
+      .money{
+      }
+    }
+  }
+  .body{
+    color:#FFF;
+    font-size: 30px; /*px*/
+    .user{
+      display: flex;align-items: center;
+      height:118px;
+      padding:0 20px;
+      position: relative;
+      border-bottom:2px solid transparent;/*no*/
+      &-num{
+        padding:0 26px;
+        .decimal{
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+      &-avator{
+        width: 82px;
+        height: 82px;
+        border:1px solid #FFF; /*no*/
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right:30px;
+      }
+      &-nickname{
+        //padding-left:20px;
+        width: 300px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+      }
+      &-money{
+        width: 122px;
+        text-align: center;
+      }
+    }
+    .user:after{
+      content:'';
+      width: 100%;
+      height: 2px; /*no*/
+      position: absolute;bottom:-2px;left:0;
+      background: linear-gradient(left,#380669,#863fde,#380669); ;
+    }
+    .list{
+      display: flex;align-items: center;
+      padding:0 20px;
+      height: 100px;
+      &-num{
+        padding:0 30px;
+      }
+      &-avator{
+        margin:18px 38px 0 10px;
+        height: 80px;
+        width: 64px;
+        .content{
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-left:2px;
+          margin-top:2px;
+        }
+      }
+      &-nickname{
+        //padding:0 20px;
+        width: 300px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+      }
+      &-money{
+        width: 122px;
+        text-align: center;
+      }
+    }
+    li:nth-of-type(1){
+      .list-avator{
+        background-image: url("../../assets/glod.png");
+        background-repeat:no-repeat ;
+        background-size: 64px 80px;
+        background-position: center;
+      }
+    }
+    li:nth-of-type(2){
+      .list-avator{
+        background-image: url("../../assets/silver.png");
+        background-repeat:no-repeat ;
+        background-size: 64px 80px;
+        background-position: center;
+      }
+    }
+    li:nth-of-type(3){
+      .list-avator{
+        background-image: url("../../assets/bronze.png");
+        background-repeat:no-repeat ;
+        background-size: 64px 80px;
+        background-position: center;
+      }
+    }
+  }
+  .decimal{
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    display: inline-block;
+    text-align: center;
+    background: #26adec;
+    color:@bg-color;
+    border-radius: 50%;
+    font-size: 24px; /*px*/
+  }
+}
