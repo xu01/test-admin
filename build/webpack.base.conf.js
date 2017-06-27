@@ -37,7 +37,7 @@ module.exports = {
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test')],
         query: {
-          presets:['es2015'],
+          presets:['es2015', 'stage-2'],
           plugins:['syntax-dynamic-import', 'transform-object-rest-spread']
         }
       },
