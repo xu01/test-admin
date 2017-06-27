@@ -11,7 +11,7 @@
     </div>
     <div :class="['btn','rank',{'active':isRanking}]"
          >
-      <span @click="goRanking">排行榜</span>
+      <span @click="goRanking">排行榜1111</span>
       <!--<div class="username">-->
         <!--<span v-if="needlogin">您还未登陆</span>-->
         <!--<span v-else>{{username}}</span>-->
@@ -100,4 +100,3 @@ export default {
   }
 }
 </script>
-
